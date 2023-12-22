@@ -1,1 +1,1 @@
-import*as THREE from"three";export function animate(t,e,a,m){!function o(){requestAnimationFrame(o),m.dome&&(m.dome.rotation.y+=6e-4),a.gammaOutput=!0,a.gammaFactor=2.2,a.render(t,e)}()}
+export function animate(t,a,e,m){!function n(){requestAnimationFrame(n),m.dome&&(m.dome.rotation.y+=6e-4),e.gammaOutput=!0,e.gammaFactor=2.2,e.render(t,a)}()}
