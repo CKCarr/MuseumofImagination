@@ -58,7 +58,7 @@ Ctrl - Click on local server.
 
 ![Gallery Controls](assets/images/readme/gallery_controls.png)
 
-## Visit our [ Museum Of Imagination](https://cameronrosencutter.github.io/Museum-of-Imagination/public/index.html) 
+## Visit our [ Museum Of Imagination](https://cameronrosencutter.github.io/Museum-of-Imaginationindex.html) 
 
 Please Feel Free to connect with any one of us at our socials linked below!
 

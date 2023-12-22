@@ -44,9 +44,9 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 /////////// Background Images//////////////////// 
-const imgUrl1 = '/public/Images/assets/artGallery1Index/low-angle-shot-mesmerizing-starry-sky.jpg';
-const imgUrl2 = '/public/Images/assets/fantasy_9.webp';
-const imgUrl3 = '/public/Images/assets/artGallery1Index/ultra-detailed-nebula-abstract-wallpaper-4.jpg';
+const imgUrl1 = 'Images/assets/artGallery1Index/low-angle-shot-mesmerizing-starry-sky.jpg';
+const imgUrl2 = 'Images/assets/fantasy_9.webp';
+const imgUrl3 = 'Images/assets/artGallery1Index/ultra-detailed-nebula-abstract-wallpaper-4.jpg';
 const imgUrl4 = '../Images/assets/fantasy_10.webp';
 const imgUrl5 = "/Images/assets/artGallery1Index/ultra-detailed-nebula-abstract-wallpaper-4.jpg";
 
@@ -575,7 +575,7 @@ scene.add(painting7);
 const painting8 = createPainting({ // front wall
     width: 8,
     height: 5,
-    textureUrl: '/public/Images/clockthing.jpg',
+    textureUrl: 'Images/clockthing.jpg',
     position: { x: 0, y: 3, z: -24.99 },
     rotation: { x: 0, y: 0, z: 0 },
     bBox: true
@@ -651,7 +651,7 @@ scene.add(painting14);
 const painting15 = createPainting({ // right wall
     width: 8,
     height: 5,
-    textureUrl: '/public/Images/livingforest.jpg',
+    textureUrl: 'Images/livingforest.jpg',
     position: { x: 24.99, y: 3, z: -20 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true

@@ -4,9 +4,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        museumGallery: 'src/public/scripts/1_museumGallery.js',
-        modelsGallery: 'src/public/scripts/modules/1_modelsGallery.js',
-        museumIndex: 'src/public/scripts/museum.js',
+        museumGallery: 'src/scripts/1_museumGallery.js',
+        modelGallery: 'src/scripts/modules/1_modelGallery.js',
+        museumIndex: 'src/scripts/museum.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -25,10 +25,13 @@ module.exports = {
                 },
             },
             {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
-            // Add other loaders for file types (images, fonts, etc.) as needed
         ],
     },
     plugins: [
@@ -39,9 +42,9 @@ module.exports = {
             chunks: ['museumGallery']
         }),
         new HtmlWebpackPlugin({
-            template: './src/modelsGallery.html',
-            filename: 'modelsGallery.html',
-            chunks: ['modelsGallery']
+            template: './src/modelGallery.html',
+            filename: 'modelGallery.html',
+            chunks: ['modelGallery']
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
@@ -53,5 +56,13 @@ module.exports = {
         children: true, // Shows details for child compilations
         errorDetails: true, // Shows details of errors
         // You can add more options for detailed stats as needed
+    },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, './src/public'),
+        },
+        compress: true,
+        port: 8081,
+        historyApiFallback: true, // Important for single-page applications
     },
 };
