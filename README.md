@@ -48,15 +48,15 @@ Ctrl - Click on local server.
 ```
 
 
-![Navigation](dist/public/Images/readme/readme_home.png)
+![Navigation](assets/images/readme/readme_home.png)
 
-![Museum Design](dist/public/Images/readme/museum_design.png)
+![Museum Design](assets/images/readme/museum_design.png)
 
-![Museum Gallery](dist/public/Images/readme/readme_gallery2.png)
+![Museum Gallery](assets/images/readme/readme_gallery2.png)
 
-![Models Gallery](dist/public/Images/readme/readme_gallery1.png)
+![Models Gallery](assets/images/readme/readme_gallery1.png)
 
-![Gallery Controls](dist/public/Images/readme/gallery_controls.png)
+![Gallery Controls](assets/images/readme/gallery_controls.png)
 
 ## Visit our [ Museum Of Imagination](https://cameronrosencutter.github.io/Museum-of-Imagination/public/index.html) 
 
