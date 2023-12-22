@@ -1,5 +1,4 @@
-// controls.js
-import * as THREE from 'three';
+// controls.j
 import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls';
 import { showMenu, hideMenu } from './menu.js';
 

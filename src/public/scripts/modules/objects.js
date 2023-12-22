@@ -61,7 +61,7 @@ export async function addObjects(scene, callback = null) {
     // dome ceiling 
     const radius = 40;
     const sphereGeometry = new THREE.SphereGeometry(radius, 20, 10, 3, Math.PI * 2, 0, Math.PI / 2);
-    const ceilingTexture = new THREE.TextureLoader().load('../Images/vibrantcity.jpg');
+    const ceilingTexture = new THREE.TextureLoader().load('public//Images/vibrantcity.jpg');
     // const ceilingTexture = new THREE.TextureLoader().load('../Images/image1_0.jpg');
 
     const ceilingMaterial = new THREE.MeshBasicMaterial({
@@ -82,7 +82,7 @@ export async function addObjects(scene, callback = null) {
     const floorOptions = {
         width: 50,
         height: 50,
-        textureUrl: '../Images/assets/artGallery1Index/herringbone_parquet_diff_1k.jpg',
+        textureUrl: 'public/Images/assets/artGallery1Index/herringbone_parquet_diff_1k.jpg',
         position: { x: 0, y: -Math.PI / 2, z: 0 },
         rotation: { x: Math.PI / 2, y: 0, z: 0 },
         bBox: true
@@ -143,7 +143,7 @@ export async function addObjects(scene, callback = null) {
     const painting1 = createPlane({ //left wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/Museumopen.png',
+        textureUrl: 'public/Images/Museumopen.png',
         position: { x: -24.99, y: 3, z: 20 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -154,7 +154,7 @@ export async function addObjects(scene, callback = null) {
     const painting2 = createPlane({ // left wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/snowglobe.jpg',
+        textureUrl: 'public/Images/snowglobe.jpg',
         position: { x: -24.99, y: 3, z: 10 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -165,7 +165,7 @@ export async function addObjects(scene, callback = null) {
     const painting3 = createPlane({ // left wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/499ea6b3-0c41-4f76-b3b9-352c4c60c1ad.jpg',
+        textureUrl: 'public/Images/499ea6b3-0c41-4f76-b3b9-352c4c60c1ad.jpg',
         position: { x: -24.99, y: 3, z: 0 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -176,7 +176,7 @@ export async function addObjects(scene, callback = null) {
     const painting4 = createPlane({ // left wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/540df13e-699d-435f-9201-ef7ee04126d9.jpg',
+        textureUrl: 'public/Images/540df13e-699d-435f-9201-ef7ee04126d9.jpg',
         position: { x: -24.99, y: 3, z: -10 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -187,7 +187,7 @@ export async function addObjects(scene, callback = null) {
     const painting5 = createPlane({ // left wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/0741e905-b043-4f09-bd3e-6283b6992624.jpg',
+        textureUrl: 'public/Images/0741e905-b043-4f09-bd3e-6283b6992624.jpg',
         position: { x: -24.99, y: 3, z: -20 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -197,7 +197,7 @@ export async function addObjects(scene, callback = null) {
     const painting6 = createPlane({ // front wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/distortedglasshouse.jpg',
+        textureUrl: 'public/Images/distortedglasshouse.jpg',
         position: { x: 20, y: 3, z: -24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true
@@ -207,7 +207,7 @@ export async function addObjects(scene, callback = null) {
     const painting7 = createPlane({ // front wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/3896eef8-f472-4c2a-bd2d-aa1f9c0d6c6f.jpg',
+        textureUrl: 'public/Images/3896eef8-f472-4c2a-bd2d-aa1f9c0d6c6f.jpg',
         position: { x: 10, y: 3, z: -24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true
@@ -218,7 +218,7 @@ export async function addObjects(scene, callback = null) {
     const painting8 = createPlane({ // front wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/bui.webp',
+        textureUrl: 'public/Images/bui.webp',
         position: { x: 0, y: 3, z: -24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true
@@ -229,7 +229,7 @@ export async function addObjects(scene, callback = null) {
     const painting9 = createPlane({ // front wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/clockbuilding.jpg',
+        textureUrl: 'public/Images/clockbuilding.jpg',
         position: { x: -10, y: 3, z: -24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true
@@ -240,7 +240,7 @@ export async function addObjects(scene, callback = null) {
     const painting10 = createPlane({ // front wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/e8b323d2-392b-4695-84dc-2ff10f7b9c63.JPG',
+        textureUrl: 'public/Images/e8b323d2-392b-4695-84dc-2ff10f7b9c63.JPG',
         position: { x: -20, y: 3, z: -24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true
@@ -251,7 +251,7 @@ export async function addObjects(scene, callback = null) {
     const painting11 = createPlane({ // right wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/floatingcityicon.png',
+        textureUrl: 'public/Images/floatingcityicon.png',
         position: { x: 24.99, y: 3, z: 20 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -262,7 +262,7 @@ export async function addObjects(scene, callback = null) {
     const painting12 = createPlane({ // right wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/frozencity.jpg',
+        textureUrl: 'public/Images/frozencity.jpg',
         position: { x: 24.99, y: 3, z: 10 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -273,7 +273,7 @@ export async function addObjects(scene, callback = null) {
     const painting13 = createPlane({ // right wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/image.jpg',
+        textureUrl: 'public/Images/image.jpg',
         position: { x: 24.99, y: 3, z: 0 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -284,7 +284,7 @@ export async function addObjects(scene, callback = null) {
     const painting14 = createPlane({ // right wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/image.png',
+        textureUrl: 'public/Images/image.png',
         position: { x: 24.99, y: 3, z: -10 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -294,7 +294,7 @@ export async function addObjects(scene, callback = null) {
     const painting15 = createPlane({ // right wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/image(2).jpg',
+        textureUrl: 'public/Images/image(2).jpg',
         position: { x: 24.99, y: 3, z: -20 },
         rotation: { x: 0, y: Math.PI / 2, z: 0 },
         bBox: true
@@ -304,7 +304,7 @@ export async function addObjects(scene, callback = null) {
     const painting16 = createPlane({ // back wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/submergedhome.jpg',
+        textureUrl: 'public/Images/submergedhome.jpg',
         position: { x: 20, y: 3, z: 24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true
@@ -314,7 +314,7 @@ export async function addObjects(scene, callback = null) {
     const painting17 = createPlane({ // back wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/surrealhouse.png',
+        textureUrl: 'public/Images/surrealhouse.png',
         position: { x: 10, y: 3, z: 24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true
@@ -324,7 +324,7 @@ export async function addObjects(scene, callback = null) {
     const painting18 = createPlane({ // back wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/hoveringfortress.jpg',
+        textureUrl: 'public/Images/hoveringfortress.jpg',
         position: { x: 0, y: 3, z: 24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true
@@ -335,7 +335,7 @@ export async function addObjects(scene, callback = null) {
     const painting19 = createPlane({ // back wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/vibrantcity.jpg',
+        textureUrl: 'public/Images/vibrantcity.jpg',
         position: { x: -10, y: 3, z: 24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true
@@ -346,7 +346,7 @@ export async function addObjects(scene, callback = null) {
     const painting20 = createPlane({ // back wall
         width: 8,
         height: 5,
-        textureUrl: '../Images/weirdbuilding.png',
+        textureUrl: 'public/Images/weirdbuilding.png',
         position: { x: -20, y: 3, z: 24.99 },
         rotation: { x: 0, y: 0, z: 0 },
         bBox: true

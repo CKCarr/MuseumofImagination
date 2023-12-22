@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const isProduction = process.env.NODE_ENV === 'production';
+
 
 module.exports = {
     entry: {
@@ -11,6 +14,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name]bundle.js',
+        publicPath: '/', // Adjust according to your deployment path
     },
     module: {
         rules: [
@@ -37,25 +41,30 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: './src/museumGallery.html',
+            template: 'src/museumGallery.html',
             filename: 'museumGallery.html',
             chunks: ['museumGallery']
         }),
         new HtmlWebpackPlugin({
-            template: './src/modelGallery.html',
+            template: 'src/modelGallery.html',
             filename: 'modelGallery.html',
             chunks: ['modelGallery']
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: 'src/index.html',
             filename: 'index.html',
             chunks: ['museum']
         }),
         new HtmlWebpackPlugin({
-            template: './src/contact.html',
+            template: 'src/contact.html',
             filename: 'contact.html',
             chunks: ['museum']
         }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src/public', to: 'public' }
+            ]
+        })
     ],
     stats: {
         children: true, // Shows details for child compilations
@@ -64,10 +73,11 @@ module.exports = {
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, './src/public'),
+            directory: path.join(__dirname, 'src/public'),
         },
         compress: true,
         port: 8081,
         historyApiFallback: true, // Important for single-page applications
     },
+    devtool: isProduction ? 'source-map' : 'eval-source-map',
 };

@@ -26,7 +26,7 @@ export function initScene() {
 
     /////////// Background Images//////////////////// 
 
-    const imgUrl = '../Images/building1.jpg';
+    const imgUrl = 'public/Images/building1.jpg';
 
     const loader = new THREE.TextureLoader();
     const texture = loader.load(imgUrl, () => {

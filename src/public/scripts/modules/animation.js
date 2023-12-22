@@ -1,14 +1,5 @@
 // animation.js
 
-import * as THREE from 'three';
-
-
-/////////////////////////////////////////////////////////////////////////////
-
-/////////////////////////////////////////////////////////////////////////////
-
-
-
 // Render Loop - render the scene every time the screen is refreshed
 // animate function is called 60 times per second
 export function animate(scene, camera, renderer, objects) {

@@ -24,7 +24,7 @@ export const audioSetup = (camera) => {
     // create an audio loader
     const audioLoader = new THREE.AudioLoader();
     // load the audio file
-    audioLoader.load("../audio/dramatic-background-orchestral-hip-hop-music-for-vlog-video-60-second-180910.mp3", function (buffer) {
+    audioLoader.load("public/audio/dramatic-background-orchestral-hip-hop-music-for-vlog-video-60-second-180910.mp3", function (buffer) {
         // set the audio source buffer
         sound.setBuffer(buffer);
         // set the audio source to loop
@@ -37,7 +37,7 @@ export const audioSetup = (camera) => {
 
     const audioLoader2 = new THREE.AudioLoader();
     // load the audio file
-    audioLoader2.load("../audio/background-epic-piano-music-for-short-video-vlog-advertising-1-minute-180911.mp3", function (buffer) {
+    audioLoader2.load("public/audio/background-epic-piano-music-for-short-video-vlog-advertising-1-minute-180911.mp3", function (buffer) {
         // set the audio source buffer
         sound.setBuffer(buffer);
         // set the audio source to loop

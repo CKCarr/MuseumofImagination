@@ -44,11 +44,11 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 /////////// Background Images//////////////////// 
-const imgUrl1 = 'Images/assets/artGallery1Index/low-angle-shot-mesmerizing-starry-sky.jpg';
-const imgUrl2 = 'Images/assets/fantasy_9.webp';
-const imgUrl3 = 'Images/assets/artGallery1Index/ultra-detailed-nebula-abstract-wallpaper-4.jpg';
-const imgUrl4 = '../Images/assets/fantasy_10.webp';
-const imgUrl5 = "/Images/assets/artGallery1Index/ultra-detailed-nebula-abstract-wallpaper-4.jpg";
+const imgUrl1 = 'public/Images/assets/artGallery1Index/low-angle-shot-mesmerizing-starry-sky.jpg';
+const imgUrl2 = 'public/Images/assets/fantasy_9.webp';
+const imgUrl3 = 'public/Images/assets/artGallery1Index/ultra-detailed-nebula-abstract-wallpaper-4.jpg';
+const imgUrl4 = 'public/Images/assets/fantasy_10.webp';
+const imgUrl5 = "public/Images/assets/artGallery1Index/ultra-detailed-nebula-abstract-wallpaper-4.jpg";
 
 
 const loader = new THREE.TextureLoader();
@@ -341,15 +341,15 @@ function objectTexture(url) {
 
 // create texture for floor
 
-// const floorTexture = new THREE.TextureLoader().load('../Images/assets/artGallery1Index/marble.jpg');
+// const floorTexture = new THREE.TextureLoader().load('public/Images/assets/artGallery1Index/marble.jpg');
 
-// const floorTexture = new THREE.TextureLoader().load('../Images/assets/artGallery1Index/metal_galvanised_grey_texture.jpg');
+// const floorTexture = new THREE.TextureLoader().load('public/Images/assets/artGallery1Index/metal_galvanised_grey_texture.jpg');
 
-// const floorTexture = new THREE.TextureLoader().load('../Images/assets/artGallery1Index/wood_floor.jpg');
+// const floorTexture = new THREE.TextureLoader().load('public/Images/assets/artGallery1Index/wood_floor.jpg');
 
-// const floorTexture = new THREE.TextureLoader().load('../Images/assets/artGallery1Index/herringbone_parquet_diff_1k.jpg');
+// const floorTexture = new THREE.TextureLoader().load('public/Images/assets/artGallery1Index/herringbone_parquet_diff_1k.jpg');
 
-const floorTexture = new THREE.TextureLoader().load('../Images/assets/artGallery1Index/astronomy.png');
+const floorTexture = new THREE.TextureLoader().load('public/Images/assets/artGallery1Index/astronomy.png');
 
 floorTexture.wrapS = THREE.RepeatWrapping;
 floorTexture.wrapT = THREE.RepeatWrapping;
@@ -425,20 +425,20 @@ wallGroup.position.y = 5;
 ///////////////////////////////////////////////////////////////////////////////
 
 
-frontWall.material.map = objectTexture('../Images/assets/artGallery1Index/castle.jpg');
+frontWall.material.map = objectTexture('public/Images/assets/artGallery1Index/castle.jpg');
 
-backWall.material.map = objectTexture('../Images/assets/artGallery1Index/museum.jpg');
+backWall.material.map = objectTexture('public/Images/assets/artGallery1Index/museum.jpg');
 
-leftWall.material.map = objectTexture('../Images/assets/artGallery1Index/castle.jpg');
+leftWall.material.map = objectTexture('public/Images/assets/artGallery1Index/castle.jpg');
 
-rightWall.material.map = objectTexture('../Images/assets/artGallery1Index/castle.jpg');
+rightWall.material.map = objectTexture('public/Images/assets/artGallery1Index/castle.jpg');
 
 
 // // create ceiling
 // dome ceiling 
 const radius = 40;
 const sphereGeometry = new THREE.SphereGeometry(radius, 32, 32, 0, Math.PI * 2, 0, Math.PI / 2);
-const ceilingTexture = new THREE.TextureLoader().load('../Images/assets/artGallery1Index/astronomy.png');
+const ceilingTexture = new THREE.TextureLoader().load('public/Images/assets/artGallery1Index/astronomy.png');
 ceilingTexture.mapping = THREE.EquirectangularReflectionMapping;
 
 const ceilingMaterial = new THREE.MeshBasicMaterial({
@@ -500,7 +500,7 @@ export function createPainting(options) {
 const painting1 = createPainting({ //left wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/Museumopen.png',
+    textureUrl: 'public/Images/Museumopen.png',
     position: { x: -24.99, y: 3, z: 20 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -511,7 +511,7 @@ scene.add(painting1);
 const painting2 = createPainting({ // left wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/cyberpunk.jpg',
+    textureUrl: 'public/Images/cyberpunk.jpg',
     position: { x: -24.99, y: 3, z: 10 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -522,7 +522,7 @@ scene.add(painting2);
 const painting3 = createPainting({ // left wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/assets/artGallery1Index/aigen-awe.png',
+    textureUrl: 'public/Images/assets/artGallery1Index/aigen-awe.png',
     position: { x: -24.99, y: 3, z: 0 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -533,7 +533,7 @@ scene.add(painting3);
 const painting4 = createPainting({ // left wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/10d625ce-efe9-472e-95f8-63427368a9d9.jpg',
+    textureUrl: 'public/Images/10d625ce-efe9-472e-95f8-63427368a9d9.jpg',
     position: { x: -24.99, y: 3, z: -10 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -544,7 +544,7 @@ scene.add(painting4);
 const painting5 = createPainting({ // left wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/17d20236-9fe2-475b-b86f-5fd290b06068.jpg',
+    textureUrl: 'public/Images/17d20236-9fe2-475b-b86f-5fd290b06068.jpg',
     position: { x: -24.99, y: 3, z: -20 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -554,7 +554,7 @@ scene.add(painting5);
 const painting6 = createPainting({ // front wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/80d4ece7-090e-45d0-b930-4b19c6b0601b.jpg',
+    textureUrl: 'public/Images/80d4ece7-090e-45d0-b930-4b19c6b0601b.jpg',
     position: { x: 20, y: 3, z: -24.99 },
     rotation: { x: 0, y: 0, z: 0 },
     bBox: true
@@ -564,7 +564,7 @@ scene.add(painting6);
 const painting7 = createPainting({ // front wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/319046ed-cf78-4216-b961-a51ad48faed9.jpg',
+    textureUrl: 'public/Images/319046ed-cf78-4216-b961-a51ad48faed9.jpg',
     position: { x: 10, y: 3, z: -24.99 },
     rotation: { x: 0, y: 0, z: 0 },
     bBox: true
@@ -575,7 +575,7 @@ scene.add(painting7);
 const painting8 = createPainting({ // front wall
     width: 8,
     height: 5,
-    textureUrl: 'Images/clockthing.jpg',
+    textureUrl: 'public/Images/clockthing.jpg',
     position: { x: 0, y: 3, z: -24.99 },
     rotation: { x: 0, y: 0, z: 0 },
     bBox: true
@@ -586,7 +586,7 @@ scene.add(painting8);
 const painting9 = createPainting({ // front wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/buildingicons/weirdbuild.png',
+    textureUrl: 'public/Images/buildingicons/weirdbuild.png',
     position: { x: -10, y: 3, z: -24.99 },
     rotation: { x: 0, y: 0, z: 0 },
     bBox: true
@@ -597,7 +597,7 @@ scene.add(painting9);
 const painting10 = createPainting({ // front wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/d7d83c67-71a2-4ac9-8384-8d8907013c57.jpg',
+    textureUrl: 'public/Images/d7d83c67-71a2-4ac9-8384-8d8907013c57.jpg',
     position: { x: -20, y: 3, z: -24.99 },
     rotation: { x: 0, y: 0, z: 0 },
     bBox: true
@@ -608,7 +608,7 @@ scene.add(painting10);
 const painting11 = createPainting({ // right wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/e96f2fd6-7499-4352-8dd0-1fa3231f4e3b.jpg',
+    textureUrl: 'public/Images/e96f2fd6-7499-4352-8dd0-1fa3231f4e3b.jpg',
     position: { x: 24.99, y: 3, z: 20 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -619,7 +619,7 @@ scene.add(painting11);
 const painting12 = createPainting({ // right wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/forest1.jpg',
+    textureUrl: 'public/Images/forest1.jpg',
     position: { x: 24.99, y: 3, z: 10 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -630,7 +630,7 @@ scene.add(painting12);
 const painting13 = createPainting({ // right wall
     width: 8,
     height: 5,
-    textureUrl: '../Images/image0_0.jpg',
+    textureUrl: 'public/Images/image0_0.jpg',
     position: { x: 24.99, y: 3, z: 0 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -641,7 +641,7 @@ scene.add(painting13);
 const painting14 = createPainting({ // right wall
     width: 8,
     height: 5,
-    textureUrl: '/Images/image1_0.jpg',
+    textureUrl: 'public/Images/image1_0.jpg',
     position: { x: 24.99, y: 3, z: -10 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -651,7 +651,7 @@ scene.add(painting14);
 const painting15 = createPainting({ // right wall
     width: 8,
     height: 5,
-    textureUrl: 'Images/livingforest.jpg',
+    textureUrl: 'public/Images/livingforest.jpg',
     position: { x: 24.99, y: 3, z: -20 },
     rotation: { x: 0, y: Math.PI / 2, z: 0 },
     bBox: true
@@ -687,7 +687,7 @@ export const audioSetup = (camera) => {
     // create an audio loader
     const audioLoader = new THREE.AudioLoader();
     // load the audio file
-    audioLoader.load("../audio/ethereal-voyage-161507.mp3", function (buffer) {
+    audioLoader.load("public/audio/ethereal-voyage-161507.mp3", function (buffer) {
         // set the audio source buffer
         sound.setBuffer(buffer);
         // set the audio source to loop

@@ -76,7 +76,7 @@ export function objectTexture(url, options = {}) {
         objectTexture.repeat.set(options.repeat.x, options.repeat.y);
     }
 
-    if (url === '../Images/assets/artGallery1Index/herringbone_parquet_diff_1k.jpg') {
+    if (url === 'public/Images/assets/artGallery1Index/herringbone_parquet_diff_1k.jpg') {
         objectTexture.repeat.set(10, 10);
     }
 
