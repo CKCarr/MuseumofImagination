@@ -4,9 +4,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        museumGallery: 'src/scripts/1_museumGallery.js',
-        modelGallery: 'src/scripts/modules/1_modelGallery.js',
-        museumIndex: 'src/scripts/museum.js',
+        museumGallery: './src/public/scripts/1_museumGallery.js',
+        modelGallery: './src/public/scripts/modules/1_modelGallery.js',
+        museumIndex: './src/public/scripts/museum.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -49,6 +49,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html',
+            chunks: ['museum']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/contact.html',
+            filename: 'contact.html',
             chunks: ['museum']
         }),
     ],
