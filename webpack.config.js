@@ -4,9 +4,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        museumGallery: './dist/public/scripts/1_museumGallery.js',
-        modelsGallery: './dist/public/scripts/modules/modelsGallery.js',
-        museumIndex: './dist/public/scripts/museum.js',
+        museumGallery: 'src/public/scripts/1_museumGallery.js',
+        modelsGallery: 'src/public/scripts/modules/1_modelsGallery.js',
+        museumIndex: 'src/public/scripts/museum.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -34,19 +34,24 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: './dist/museumGallery.html',
+            template: './src/museumGallery.html',
             filename: 'museumGallery.html',
             chunks: ['museumGallery']
         }),
         new HtmlWebpackPlugin({
-            template: './dist/modelsGallery.html',
+            template: './src/modelsGallery.html',
             filename: 'modelsGallery.html',
             chunks: ['modelsGallery']
         }),
         new HtmlWebpackPlugin({
-            template: './dist/index.html',
+            template: './src/index.html',
             filename: 'index.html',
             chunks: ['museum']
         }),
     ],
+    stats: {
+        children: true, // Shows details for child compilations
+        errorDetails: true, // Shows details of errors
+        // You can add more options for detailed stats as needed
+    },
 };
