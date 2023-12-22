@@ -1,9 +1,6 @@
 /** FOR INDEX HTML - ART GALLERY */
 // console log for inspector to see if THREE is loaded
 import * as THREE from 'three';
-
-
-
 console.log("THREE object is loaded 😄, here is the THREE object: ", THREE)
 
 
@@ -22,7 +19,7 @@ import { MapControls } from 'three/addons/controls/MapControls.js';
 // import { lightingSetup } from './lightingSetup.js';
 // import { objectTexture } from '/modules/utility.js';
 // import { setUpBoundingBox } from './utility.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { playButtonSetup } from './menu.js';
 
 // //////////////////////////////////////////////////////////////////////////////

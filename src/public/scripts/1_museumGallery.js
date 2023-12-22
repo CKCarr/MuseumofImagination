@@ -1,7 +1,7 @@
 /** FOR INDEX HTML - ART GALLERY */
 import * as THREE from 'three';
 import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls.js';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+
 
 // import * as THREE from 'three';
 // import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls.js';
